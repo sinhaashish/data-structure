@@ -9,17 +9,35 @@ parameters:
   - name: limit
     content: Limit the number of books returned
 content_markdown: |-
-  This call will return a maximum of 100 books
+  This call will return a maximum of 100 hahahaha hhhhhh jjjj books
   {: .info }
 
-  Lists all the photos you have access to. You can paginate by using the parameters listed above.
+  Tree trasverasal is mainly of four kinds 
+    1. PreOrder
+    2. InOrder
+    3. PostOrder
+    4. LevelOrder
+
+  PreOrder  : The root node is visted first then the left and then the right node.
+  
+  InOrder   : The left node is visted first then the root and then the right node.
+
+  PostOrder : The left node is visted first then the right and then the root node.
+
+  PreOrder : N L R
+
+  InOrder  : L N R
+
+  PostOrder: L R N
+
+
 left_code_blocks:
   - code_block: |-
       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
         alert(data);
       });
     title: jQuery
-    language: javascript
+    language: javascript 
   - code_block: |-
       r = requests.get("http://api.myapp.com/books/", token="YOUR_APP_KEY")
       print r.text
@@ -34,12 +52,19 @@ left_code_blocks:
     title: Node.js
     language: javascript
   - code_block: |-
-
       func preOrder( node *Node) {
         if node != nil {
-          fmt.Println(" - ", node.data)
+          fmt.Println(" - mmm", node.data)
           preOrder(node.left)
           preOrder(node.right)
+        }
+      }
+
+      func InOrder( node *Node) {
+        if node != nil {
+          fmt.Println(" - ", node.data)
+          InOrder(node.left)
+          InOrder(node.right)
         }
       }
     title: Go
