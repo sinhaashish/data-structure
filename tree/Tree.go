@@ -15,9 +15,15 @@ func main() {
 		Insert(3).
 		Insert(5).
 		Insert(7)
-	fmt.Println("Inorder Traversal - recursive solution : ")
 
-	binaryTree.Inorder()
+	fmt.Println("PreOrder Traversal - recursive solution : ")
+	binaryTree.PreOrder()
+
+	fmt.Println("Inorder Traversal - recursive solution : ")
+	binaryTree.InOrder()
+
+	fmt.Println("PostOrder Traversal - recursive solution : ")
+	binaryTree.PostOrder()
 	fmt.Println()
 
 }
