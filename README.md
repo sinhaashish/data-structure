@@ -12,7 +12,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 
 ## Features
 
-* Three column layout
+* Three column lay
 * Fully responsive
 * Full text search
 * Pre-styled components
